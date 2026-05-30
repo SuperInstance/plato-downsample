@@ -58,7 +58,7 @@ impl DownsampledSeries {
         let downsampled: Vec<(f64, f64)> = self.indices.iter().map(|&i| original[i]).collect();
         let mut sum_sq = 0.0;
 
-        for (i, (x, y)) in original.iter().enumerate() {
+        for (_i, (x, y)) in original.iter().enumerate() {
             let reconstructed = interpolate(&downsampled, *x);
             let diff = y - reconstructed;
             sum_sq += diff * diff;

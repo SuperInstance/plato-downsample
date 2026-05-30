@@ -3,6 +3,7 @@ name = "plato-downsample"
 version = "0.1.0"
 edition = "2021"
 description = "Intelligent downsampling for PLATO tile streams with anomaly preservation"
+repository = "https://github.com/SuperInstance/plato-downsample"
 license = "Apache-2.0"
 
 [dependencies]
